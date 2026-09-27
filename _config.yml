@@ -1,0 +1,36 @@
+title: Vishnu Yadav
+tagline: Configuration Management & Build/Release Engineering
+description: >-
+  Portfolio and engineering notes from Vishnu Yadav — 12+ years in
+  build systems, CI/CD, and release engineering.
+url: ""
+baseurl: ""
+
+author:
+  name: Vishnu D Yadav
+  email: vishnudutt_yadav@outlook.com
+  linkedin: https://in.linkedin.com/in/vishnu-yadav-25ab32a3
+  github: ""
+
+markdown: kramdown
+permalink: /log/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

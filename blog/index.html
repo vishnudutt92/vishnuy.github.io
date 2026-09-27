@@ -1,0 +1,18 @@
+---
+layout: default
+title: Blog
+description: "Notes on build systems, CI/CD, and debugging things that broke in interesting ways."
+permalink: /blog/
+---
+<section class="section">
+  <div class="section-head"><h2>The build log</h2></div>
+  <div class="card-list">
+    {% for post in site.posts %}
+    <div class="card">
+      <div class="meta">{{ post.date | date: "%d %b %Y" }}{% if post.tags %} — {{ post.tags | join: ", " }}{% endif %}</div>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
